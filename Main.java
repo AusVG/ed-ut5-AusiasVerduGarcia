@@ -7,7 +7,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Gestión de biblioteca");
-        System.out.println("1.Agregar libro.");
+        System.out.println("1.Agregar libro a la biblioteca.");
         System.out.println("2. Actualizar ejemplares.");
         System.out.println("3.Mostrar informacion de todos los libros.");
         System.out.println("4.Buscar libro por autor");
@@ -25,11 +25,11 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Dime el título del libro:");
+                    System.out.println("Dime el título del libro que deseas incorporar:");
                     String titulo=sc.nextLine();
-                    System.out.println("Dime el autor del libro");
+                    System.out.println("Dime el autor del libro que deseas incorporar");
                     String autor=sc.nextLine();
-                    System.out.println("Dime los ejemplares:");
+                    System.out.println("Dime el número de ejemplares que incorporas:");
                     int nEjemplares=sc.nextInt();
                     //Limpiar el buffer
                     sc.nextLine();
